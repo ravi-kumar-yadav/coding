@@ -21,11 +21,57 @@
  If a < c OR a==c AND b < d. 
  */
 
-module.exports = { 
+
+// returns all Prime-Numbers till "n"
+// complexity: O(nLogLog(n))
+function getPrimeNumber(n) {
+	var x = [];
+
+	x[0] = x[1] = 0;
+	x[2] = 1;
+
+	for (var i=2; i<=n; i++) {
+		x[i] = 1;
+	}
+
+	for (var i=2; i*i<=n; i++) {
+		if (x[i]==1) {
+			for (var p=2*i; p<=n; p+=i) {
+				x[p] = 0;
+			}
+		}
+	}
+
+	return x;
+}
+
+
+// check if given number is Prime or Not
+function isPrime(n) {
+	for (var i=2; i<=Math.sqrt(n); i++) {
+		if (n%i == 0) {
+			return false;
+		}
+	}
+
+	return (n <= 1) ? false : true;
+}
+
+
+var Out = { 
  //param A : integer
  //return a array of integers
     primesum : function(A){
 
+	for (var i = 2; i <= (A/2); i++) {
+		if (isPrime(i) && isPrime(A-i)) {
+			return [i, A-i];
+		}
+	}
+
+	return [];
     }
 };
+
+console.log(Out.primesum(20));
 
