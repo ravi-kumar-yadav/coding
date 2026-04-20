@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class Solution {
+class MergeInterval {
 	public int[][] merge(int[][] intervals){
 
 		List<int[]> result = new ArrayList<>();

@@ -1,0 +1,82 @@
+# ignore generated class files post javac
+*.class
+
+/target/
+/.mvn/
+/logs/
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Environment ###
+.env
+.env.local
+.env.*.local
+
+
+### Security-sensitive (keys, certs, secrets) ###
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+id_rsa
+id_dsa
+id_ecdsa10dd
+id_ed25519
+*.gpg
+*.asc
+secrets.yml
+secrets.yaml
+*.pwd
+*.credentials
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Docker ###
+docker-compose.override.yml
+
+### Build artifacts ###
+*.class
+*.jar
+*.war
+
+### Logs ###
+*.log
+
+# foundry
+.foundry/.base/
+.foundry/.metadata
+.foundry/logs/
+.foundry/.flow-session.json
+.claude/settings.local.json
