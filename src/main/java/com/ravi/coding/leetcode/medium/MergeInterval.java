@@ -1,8 +1,10 @@
+package com.ravi.coding.leetcode.medium;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class MergeInterval {
+public class MergeInterval {
 	public int[][] merge(int[][] intervals){
 
 		List<int[]> result = new ArrayList<>();
