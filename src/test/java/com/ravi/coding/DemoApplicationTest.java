@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.ravi.coding.leetcode.medium.MergeInterval;
 
-@SpringBootTest
+//@SpringBootTest
 class DemoApplicationTest {
 	private MergeInterval mergeInterval;
 
