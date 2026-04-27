@@ -9,6 +9,10 @@ import java.util.List;
 public class MergeInterval {
 	public int[][] merge(int[][] intervals){
 
+		if (intervals == null || intervals.length == 0){
+			return intervals;
+		}
+
 		List<int[]> result = new ArrayList<>();
 
 		// sort the intervals by start time
